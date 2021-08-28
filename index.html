@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>coronavirus 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- ----------left----------- -->
+      <div class="left">  
+        <h1 class="logo">
+          <i class="fas fa-syringe" style="color: #fff"></i>
+          Coronavirus COVID-19
+        </h1>
+
+        <h3 style="text-align: center">Global Cases</h3>
+
+        <hr />
+
+        <!-- --- cases-category -->
+        <div class="cases-category">
+          <div class="cases">
+            <i class="fas fa-virus" style="background: orange"></i>
+            <div>
+              <p>Active</p>
+              <h2 id="active">/_/</h2>
+            </div>
+          </div>
+
+          <div class="cases">
+            <i class="fas fa-skull" style="background: rgba(0, 0, 0, 0.8)"></i>
+            <div>
+              <p>Death</p>
+              <h2 id="death">/_/</h2>
+            </div>
+          </div>
+
+          <div class="cases">
+            <i class="fas fa-plus" style="background: rgba(0, 255, 0, 0.9)"></i>
+            <div>
+              <p>Recovered</p>
+              <h2 id="recovered">/_/</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- list of countries -->
+        <div class="list" id="list">
+          <div class="listhead">
+            <h2>Countrywise Cases</h2>
+            <ul>
+              <li>Serial</li>
+              <li>Country</li>
+              <li>country Code</li>
+              <li>Active</li>
+              <li>Recovered</li>
+              <li>Death</li>
+            </ul>
+          </div>
+
+          <div class="innerList" id="innerList"></div>
+        </div>
+
+        <!-- section of map and email -->
+        <section class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1619354992329!5m2!1sen!2sin"
+            width="450"
+            height="450"
+            style="border: 0; max-height: 450px"
+            allowfullscreen="true"
+            loading="lazy"
+          ></iframe>
+
+          <form id="form-container">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Enter your message..."
+            ></textarea>
+            <button>Subscribe</button>
+          </form>
+        </section>
+
+        <!-- footer -->
+        <footer>
+          <div>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </footer>
+      </div>
+      <!-- ----------------  right ---------------------- -->
+      <div class="right">
+        <!-- info -->
+        <div class="info">
+          <h2 class="cases-info">Cases Info</h2>
+          <p><i class="fas fa-bars"></i></p>
+          <input
+            id="SearchField"
+            type="text"
+            class="text"
+            placeholder="Search the City, Country"
+          />
+          <!-- current country -->
+          <button><h3 id="currentCountry">Current Country</h3></button>
+        </div>
+
+        <!-- --- cases-category -->
+        <div class="cases-category">
+          <div class="cases">
+            <i class="fas fa-virus" style="background: orange"></i>
+            <div class="detail">
+              <p>Active</p>
+              <h2 id="activeS">12377</h2>
+            </div>
+          </div>
+
+          <div class="cases">
+            <i class="fas fa-plus" style="background: rgba(0, 255, 0, 0.9)"></i>
+            <div class="detail">
+              <p>Recovered</p>
+              <h2 id="recoveredS">1347</h2>
+            </div>
+          </div>
+
+          <div class="cases">
+            <i class="fas fa-skull" style="background: rgba(0, 0, 0, 0.8)"></i>
+            <div class="detail">
+              <p>Death</p>
+              <h2 id="deathS">147</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <button id="locationBtn">Allow for location</button> <!-- remove it later -->
+    <script src="./script.js"></script>
+  </body>
+</html>
